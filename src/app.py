@@ -53,7 +53,7 @@ def login():
 
 @app.route("/", methods=["GET"])
 def index():
-    raise ValueError('A very specific bad thing happened.')
+    # raise ValueError('A very specific bad thing happened.')
     # Exception("Sorry, no numbers below zero")
     return jsonify({'test':'oks'})
 
