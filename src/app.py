@@ -19,7 +19,8 @@ from functools import wraps
 
 app = Flask(__name__)
 # mysql://username:password@server/db
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost/ask_sunat_db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost/ask_sunat_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mmysql://bc64380a52a049:7c66a7fc@us-cdbr-east-04.cleardb.com/heroku_1d0b35001b2b5a2?reconnect=true'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'lolxD'
 # time = 20 * (60 * 24 * 365)
